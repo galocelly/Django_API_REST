@@ -1,0 +1,71 @@
+# django REST
+
+- genera servicios rest para las entidades que queramos (permite resalizar un crud)
+
+## Python
+sudo apt-get install python-setuptools
+sudo apt-get install python-dev
+
+## Librerias
+Generar y entrar en un entorno ()
+virtualenv
+
+## requirements
+backports.shutil-get-terminal-size==1.0.0
+decorator==4.0.11
+Django==1.8
+django-cors-headers==2.0.0
+djangorestframework==3.5.3
+enum34==1.1.6
+httpie==0.9.9
+ipython==5.1.0
+ipython-genutils==0.1.0
+pathlib2==2.2.0
+pexpect==4.2.1
+pickleshare==0.7.4
+prompt-toolkit==1.0.9
+ptyprocess==0.5.1
+Pygments==2.1.3
+requests==2.12.4
+scandir==1.4
+simplegeneric==0.8.1
+six==1.10.0
+traitlets==4.3.1
+wcwidth==0.1.7
+
+guardar en requirements.txt   pip install -r requirements.txt
+
+
+
+## Crear proy django
+django-admin startproject institucion
+cd institucion
+python manage.py startapp escuela
+
+## modificar models, admin y settings
+https://gist.github.com/reroes/a00e9bfc88b45af17f0e8788322638d3
+
+python manage.py makemigrations escuela
+python manage.py migrate
+python manage.py createsuperuser (admin admin)
+python manage.py runserver   http://127.0.0.1:8000/admin/  (admin admin)
+
+## modificar views, crear serializble, urls en aplicacion y crear urls en app
+https://gist.github.com/reroes/a00e9bfc88b45af17f0e8788322638d3
+
+
+instalar chrome 
+instalar en chrome extension 'postman'
+
+
+instalar apache
+sudo apt-get install apache2
+service apache2 status / start / stop
+
+crear carpeta public_html (/home/user/)
+
+sudo a2enmod userdir
+service apache2 restart
+
+
+modificar settings ..middleware clases
